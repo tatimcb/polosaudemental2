@@ -4,6 +4,8 @@
 html, body {
 	height: 100%;
 	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 .bloco {
 	min-height: 100%; 
@@ -122,14 +124,18 @@ html, body {
 	height: 225px;
 }
 
-/* UNIDADES */
-.unidades {
+/* PROFISSIONAIS */
+.profissionais {
 	background-image: url('../img/bg-unidades.jpg'); 
 	background-repeat: no-repeat;
 	background-size: cover; background-attachment: fixed;
 }
-.unidades article p {
+.profissionais article p {
 	line-height: 1.8rem;
+}
+.profissionais img {
+	width: 100px;
+	border-radius: 50%;
 }
 
 /* CONTATO */
