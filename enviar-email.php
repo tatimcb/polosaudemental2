@@ -14,7 +14,7 @@ $headers .= "Reply-To: $email\r\n";
 $corpo = "Formulário da página de contato\r\n";
 $corpo .= "Nome: " . $name . "\r\n";
 $corpo .= "Email: " . $email . "\r\n";
-$corpo .= "Subject: " . $subject . "\r\n";
+// $corpo .= "Subject: " . $subject . "\r\n";
 $corpo .= "Mensagem: " . $message . "\r\n";
 
 // Email que receberá a mensagem (Não se esqueça de substituir)

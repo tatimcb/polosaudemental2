@@ -11,7 +11,9 @@ html, body {
 	min-height: 100%; 
 	padding-top: 94px;
 }
-
+img {
+	object-fit: contain;
+}
 /* COLORS */
 .orange-logo {
 	background-color: #F89326;
@@ -79,7 +81,23 @@ html, body {
  }
 
 /* SOBRE */
-
+.img-inst {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+  }
 .sobre img {
 	width: 400px;
 	
@@ -96,18 +114,27 @@ html, body {
 	background-color: #F89326;
 	color: #fff;
 	margin-bottom: 20px;
+	
 }
 .info-bottom ul li{
-	display: inline-block;
-	margin-left: 110px;
+	display: flex;
+	
 	
 }
 .info-bottom ul li:nth-child(1){
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: .9rem;
 	letter-spacing: .1em;
 	
+	
 }
+.info-bottom .phone {
+	margin-left: 200px;
+	
+}
+	
+
+
 
 /* SERVIÇOS */
 .servicos {
@@ -202,7 +229,8 @@ nav i.material-icons, nav a.button-collapse i {
 }
 
 .side-nav {
-	background: url('../img/textura2.png');
+	background: url('../img/textura5.jpg');
+	background-size: cover;
 }
 .side-nav li>a {
 	color: #fff; 
@@ -229,12 +257,32 @@ nav i.material-icons, nav a.button-collapse i {
 .card-image-horizontal {
 	display: none;
 }
+.card .card-content .card-title {
+	font-size: 20px;
+}
+.card .card-content {
+	height: 85px;
+}
+.card .card-image img{
+	margin-right: 5px;
+	
+}
+.info-bottom ul li .fa{
+	display: none;
+}
 }
 
 @media only screen and (min-width: 601px) {
-.banner {padding-top: 4.5rem;}
-.banner h2 {font-size: 4rem;}
-.container {width: 85%;}
+.banner {
+	padding-top: 4.5rem;
+}
+.banner h2 {
+	font-size: 4rem;
+}
+.container {
+	width: 85%;
+}
+
 }
 
 @media only screen and (min-width: 993px) {
@@ -243,9 +291,12 @@ nav i.material-icons, nav a.button-collapse i {
 	margin-top: 100px;
 }
 .banner h2 {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 .container {
 	width: 90%;
+}
+.servicos .card{
+	height: 350px;
 }
 }

@@ -11,20 +11,13 @@
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="http://www.polosaudemental.com.br/">
 	<meta property="og:image" content="http://www.polosaudemental.com.br/img/centroboaforma.jpg">
-	<meta property="og:description" content="Polo Integrativo de Saúde Mental">
+	<meta property="og:description" content="saúde mental, psicologia, musicoterapia, terapia de florais, terapia holística, psicoterapia">
 
 	<!-- Schema.org markup for Google+ -->
 	<meta itemprop="name" content="Polo Integrativo de Saúde Mental">
-	<meta itemprop="description" content="Polo Integrativo de Saúde Mental">
-	<meta itemprop="image" content="http://www.centroboaforma.com.br/img/centroboaforma.jpg">
+	<meta itemprop="description" content="saúde mental, psicologia, musicoterapia, terapia de florais, terapia holística, psicoterapia">
+	<meta itemprop="image" content="">
 
-	<!-- Twitter Card data -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@centroboaforma">
-	<meta name="twitter:title" content="Centro boa forma">
-	<meta name="twitter:description" content="O melhor centro de saúde do Brasil">
-	<meta name="twitter:image" content="http://www.example.com/img/centroboaforma.jpg">
-	<meta name="twitter:domain" content="http://www.centroboaforma.com.br/">
 	<title>Polo Integrativo de Saúde Mental</title>
 	<link rel="icon" href="img/fav.png">
 	<!-- GOOGLE ICONS -->
@@ -55,7 +48,7 @@
 			<nav class="navbar z-depth-0">
 				<div class="nav-wrapper container">
 					<h1 class="logo_text">Centro Boa Forma - Seu espaço de saúde </h1>
-					<a href=""><img class="logo_img" src="img/logo.png" alt="Centro Boa Forma"></a>
+					<a href=""><img class="logo_img" src="img/logo.png" alt="Polo Integrativo de Saúde Mental"></a>
 
 					<ul class="right light hide-on-med-and-down">
 						<li><a href="#home">Home</a></li>
@@ -109,32 +102,46 @@
 			</div>
 			<div class="col s12 l6">
 				<div class="img-inst">
-					<video width="420" height="240" controls="controls" autoplay="autoplay">
+					<iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+					<!-- <video width="420" height="240" controls="controls" autoplay="autoplay">
 						<source src="Yes Bank Advertisment.mp4" type="video/mp4">
 						<object data="" width="320" height="240">
 							<embed width="320" height="240" src="Yes Bank Advertisment.mp4">
 						</object>
-					</video>
+					</video> -->
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="info-bottom">
 		<div class="row container">
-			<div class="col">
+			
+			<div class="col s4">
 				<ul>
 					<li>Sessões online</li>
+				</ul>	
+			</div>
+			<div class="col s4">
+				<ul>
 					<li class="clock">
 						<i class="fa fa-clock-o"></i>
 						Atendimento:
 						segunda à sexta das 8h às 18h
 					</li>
+				</ul>
+			</div>
+			<div class="col s4">
+				<ul>
 					<li class="phone">
 						<i class="fa fa-phone"></i>
-						21 9999-9999 | 21 9999-9999
+						21 9999-9999
 					</li>
-
 				</ul>
+			</div>
+				
+					
+
+				
 			</div>
 
 
@@ -161,7 +168,7 @@
 			<article class="col s12 m6 l3">
 				<div class="card">
 					<div class="card-image">
-						<img src="img/1328732.png" alt="Pilates">
+						<img src="img/1328732.png" alt="Musicoterapia">
 						</a>
 					</div>
 					<div class="card-content">
@@ -234,9 +241,9 @@
 		</div>
 
 		<div class="row container center-align">
-			<article class="col s12 m6 l4">
+			<article class="col s12 m4 center">
 				<div class="card-image card-image-horizontal">
-					<img src="img/profissional01.jpg" alt="Belo Horizonte">
+					<img src="img/profissional01.jpg" alt="Profissional 01">
 				</div>
 				<div class="card-stacked">
 					<div class="card-content">
@@ -250,9 +257,9 @@
 				</div>
 
 			</article>
-			<article class="col s12 m6 l4">
+			<article class="col s12 m4 center">
 				<div class="card-image">
-					<img src="img/Sem Título-2.jpg" alt="Belo Horizonte">
+					<img src="img/Sem Título-2.jpg" alt="Profissional 02">
 				</div>
 				<div class="card-stacked">
 					<div class="card-content">
@@ -266,9 +273,9 @@
 				</div>
 
 			</article>
-			<article class="col s12 m6 l4">
+			<article class="col s12 m4 center">
 				<div class="card-image">
-					<img src="img/profissional03jpg.jpg" alt="Belo Horizonte">
+					<img src="img/profissional03jpg.jpg" alt="Profissional 03">
 				</div>
 				<div class="card-stacked">
 					<div class="card-content">
@@ -312,9 +319,9 @@
 
 					<h4> Contatos </h4>
 					<p class="light">
-						(73) 123456987 <br>
-						(45) 123456789 <br>
-						(56) 234567678
+						(21) 123456987 <br>
+						(21) 123456789 <br>
+						(21) 234567678
 					</p>
 
 				</div>
@@ -412,6 +419,17 @@
 			}
 		});
 	</script>
+	
+		<?php 
+			if(isset($_GET['status'])):
+				if($_GET['status'] == "sucesso"):
+				echo "<script>Materialize.toast('Enviado com sucesso!', 4000);</script>";
+				else:
+				echo "<script>Materialize.toast('Erro ao enviar', 4000);</script>";
+				endif;
+			endif;
+		?>
+	
 
 
 </body>
