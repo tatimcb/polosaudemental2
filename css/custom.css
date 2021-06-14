@@ -6,20 +6,22 @@ html, body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
+	
+}
+
+img {
+	object-fit: contain;
 }
 .bloco {
 	min-height: 100%; 
 	padding-top: 94px;
 }
-img {
-	object-fit: contain;
-}
 /* COLORS */
-.orange-logo {
-	background-color: #F89326;
+.blue-logo {
+	background-color: #183d4f; 
 }
 .btn:hover {
-	background-color:#f17f06; 
+	background-color: #21688b; 
 }
 /* LOGO */
 .logo_text {
@@ -27,14 +29,19 @@ img {
 	margin: 0;
 }
 .logo_img {
-	width: 100px; 
-	margin-top: 15px;
+	height: 100px; 
+	
 }
 
 /* MENU */
 .navbar {
-	background-color: transparent; 
+	background-color: #183d4f; 
 	transition: background 0.5s linear;
+	height: 100px;
+	
+}
+.navbar ul li a{
+	border-top: 1px solid transparent;
 }
 .navbar ul a:hover {
 	background-color: transparent; 
@@ -43,7 +50,7 @@ img {
 }
 
 .nav-color {
-	background-color: rgba(0,0,0,0.7); 
+	background-color: #183d4f; 
 	transition: background 0.5s linear;
 }
 
@@ -56,7 +63,7 @@ img {
 	font-size: 1rem;
 	font-weight: 900; 
 	text-transform: uppercase;
-	text-shadow: 3px 3px #111;
+	text-shadow: 2px 2px #111;
 }
 .banner p {
 	font-size: 1.2rem; 
@@ -68,6 +75,7 @@ img {
 .titulo {
 	font-size: 2rem; 
 	text-transform: uppercase;
+	color: #183d4f; 
 }
 .titulo::after {
 	content: ''; 
@@ -81,29 +89,17 @@ img {
  }
 
 /* SOBRE */
-.img-inst {
+ .img-inst {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  }
-  
-  /* Then style the iframe to fit in the container div with full height and width */
-  .responsive-iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-  }
+	padding-top: 56.25%; 
+ } 
+
 .sobre img {
-	width: 400px;
-	
-	margin-left: 50px;
-	margin-bottom: 140px;
-	
+	width: 200px;
+	display: block;
+
 }
 .sobre p {
 	line-height: 1.8rem; 
@@ -111,9 +107,10 @@ img {
 }
 
 .info-bottom {
-	background-color: #F89326;
+	background-color: #183d4f; 
 	color: #fff;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+	object-fit: top;
 	
 }
 .info-bottom ul li{
@@ -123,18 +120,20 @@ img {
 }
 .info-bottom ul li:nth-child(1){
 	text-transform: uppercase;
-	font-size: .9rem;
+	font-size: .7rem;
 	letter-spacing: .1em;
 	
 	
 }
 .info-bottom .phone {
-	margin-left: 200px;
+	margin-left: 100px;
+	
 	
 }
-	
-
-
+.info-bottom .fa {
+	color: #f17f06;
+	padding: 0px 10px 0px 0px;
+}
 
 /* SERVIÇOS */
 .servicos {
@@ -146,19 +145,24 @@ img {
 	width: 200px;
 	padding: 40px;
 	margin-left: 50px;
+	
 }
 .card .card-image {
 	height: 225px;
+	
+}
+.card .card-content .card-title {
+	color: #183d4f; 
 }
 
 /* PROFISSIONAIS */
-.profissionais {
-	background-image: url('../img/bg-unidades.jpg'); 
-	background-repeat: no-repeat;
-	background-size: cover; background-attachment: fixed;
-}
+
 .profissionais article p {
 	line-height: 1.8rem;
+	color: #183d4f; 
+}
+.profissionais h5 {
+	color: #183d4f; 
 }
 .profissionais img {
 	width: 100px;
@@ -172,7 +176,9 @@ img {
 .contato h4 {
 	font-size: 1.2rem; 
 	text-transform: uppercase; 
-	font-weight: 900;}
+	font-weight: 900;
+	
+}
 .contato .mapa {
 	min-height: 560px;
 }
@@ -193,6 +199,10 @@ img {
 	min-height: 560px; 
 	padding: 30px;
 }
+.contato .formulario h4 {
+	color: #183d4f;
+}
+
 
 /* DEPOIMENTOS */
 .depoimentos .titulo::after {
@@ -208,8 +218,9 @@ img {
 
 /* RODAPE */
 .rodape {
-	background-color: rgb(27, 27, 27);
-	padding: 30px 0;}
+	background-color: #183d4f; 
+	padding: 30px 0;
+}
 
 /* CUSTOM */
 nav.nav-extended .nav-wrapper {
@@ -254,21 +265,41 @@ nav i.material-icons, nav a.button-collapse i {
 
 /* MEDIA */
 @media only screen and (max-width: 480px) {
+.banner h2{
+	font-size: 1.5rem;
+}
 .card-image-horizontal {
 	display: none;
 }
-.card .card-content .card-title {
+.card .card-content .card-title h3 {
 	font-size: 20px;
+	
 }
 .card .card-content {
 	height: 85px;
 }
 .card .card-image img{
-	margin-right: 5px;
-	
+	width: 60%;
+	margin: 0 auto;
 }
+
 .info-bottom ul li .fa{
 	display: none;
+}
+
+.informacoes h4{
+	font-size: .9rem;
+}
+.informacoes p{
+	font-size: .9rem;
+	text-align: center;
+}
+.formulario h4 {
+	font-size: .9rem;
+	color:#183d4f;
+}
+.formulario p {
+	font-size: .9rem;
 }
 }
 
@@ -282,7 +313,6 @@ nav i.material-icons, nav a.button-collapse i {
 .container {
 	width: 85%;
 }
-
 }
 
 @media only screen and (min-width: 993px) {
@@ -291,7 +321,7 @@ nav i.material-icons, nav a.button-collapse i {
 	margin-top: 100px;
 }
 .banner h2 {
-	font-size: 3rem;
+	font-size: 4rem;
 }
 .container {
 	width: 90%;
@@ -299,4 +329,5 @@ nav i.material-icons, nav a.button-collapse i {
 .servicos .card{
 	height: 350px;
 }
+
 }
