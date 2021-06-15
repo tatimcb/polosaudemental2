@@ -266,7 +266,7 @@ nav i.material-icons, nav a.button-collapse i {
 /* MEDIA */
 @media only screen and (max-width: 480px) {
 .banner h2{
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 .card-image-horizontal {
 	display: none;
