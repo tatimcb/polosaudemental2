@@ -32,6 +32,8 @@
 	
 	<!-- MATERIALIZE CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!--AOS ANIMATION-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 </head>
@@ -85,14 +87,16 @@
 	</section>
 
 	<!-- SOBRE -->
-	<section class="sobre bloco scrollspy" id="sobre">
+	<section data-aos="fade-right"
+			data-aos-offset="200"
+			data-aos-easing="ease-in-sine" data-aos-duration="1000" class="sobre bloco scrollspy" id="sobre">
 		<div class="row container">
 			<div class="col s12 center">
 				<h2 class="light titulo">Sobre nós</h2>
 			</div>
 
 			<div class="col s12 m12 l6">
-				<p class="light">
+				<p class="light data-aos='fade-right'">
 					Somos um grupo multidisciplinar e temos
 					como objetivo a promoção, o desenvolvimento e a manutenção da própria saúde mental de nossos
 					pacientes, através de práticas, programas e atendimentos psicoterapeuticos, bem como aliando à
@@ -137,9 +141,11 @@
 	</section>
 
 	<!-- SERVIÇOS -->
-	<section class="servicos bloco scrollspy" id="servicos">
+	<section data-aos="fade-right"
+	data-aos-offset="100"
+	data-aos-easing="ease-in-sine" data-aos-duration="1000" class="servicos bloco scrollspy" id="servicos">
 		<div class="row container">
-			<div class="col s12 center">
+			<div  class="col s12 center">
 				<h2 class="light titulo white-text"> Serviços </h2>
 				<p class="light paragrafo white-text">Acompanhamento/Atendimento destinado às pessoas que identificam a
 					necessidade de iniciar a psicoterapia.
@@ -221,7 +227,9 @@
 	</section>
 
 	<!-- PROFISSIONAIS -->
-	<section class="profissionais bloco scrollspy" id="profissionais">
+	<section data-aos="fade-right"
+	data-aos-offset="300"
+	data-aos-easing="ease-in-sine" data-aos-duration="1000" class="profissionais bloco scrollspy" id="profissionais">
 		<div class="row container">
 			<div class="col s12 center">
 				<h2 class="light titulo">Nosso time</h2>
@@ -279,7 +287,9 @@
 		</div> 
 	</section>
 	<!-- CONTATO -->
-	<section class="contato bloco scrollspy" id="contato">
+	<section data-aos="fade-right"
+	data-aos-offset="300"
+	data-aos-easing="ease-in-sine" data-aos-duration="1000" class="contato bloco scrollspy" id="contato">
 		<div class="row container">
 			<div class="col s12 center">
 				<h2 class="titulo light"> Contato </h2>
@@ -364,8 +374,12 @@
 
 	<!-- MATERIALIZE JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<!-- JAVASCRIPT -->
+	<script>
+		AOS.init();
+	  </script>
 	<script>
 		// INICIALIZAÇÃO 
 		$(document).ready(function () {

@@ -262,6 +262,8 @@ nav i.material-icons, nav a.button-collapse i {
 .tabs .indicator {
 	background-color: #f17f06; 
 }
+/* --- ANIMAÇÃO --- */
+
 
 /* MEDIA */
 @media only screen and (max-width: 480px) {
@@ -271,7 +273,7 @@ nav i.material-icons, nav a.button-collapse i {
 .card-image-horizontal {
 	display: none;
 }
-.card .card-content .card-title h3 {
+.card .card-content .card-title{
 	font-size: 20px;
 	
 }
@@ -279,7 +281,7 @@ nav i.material-icons, nav a.button-collapse i {
 	height: 85px;
 }
 .card .card-image img{
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -311,17 +313,24 @@ nav i.material-icons, nav a.button-collapse i {
 		display: none;
 	}
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 490px) {
 .banner {
 	padding-top: 4.5rem;
 }
 .banner h2 {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 .container {
 	width: 85%;
 }
-
+.card .card-content .card-title h3 {
+	font-size: 10px;
+	
+}
+.card .card-image img{
+	width: 60%;
+	margin: 0 auto;
+}
 }
 
 @media only screen and (min-width: 993px) {
