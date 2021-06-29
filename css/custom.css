@@ -288,7 +288,10 @@ nav i.material-icons, nav a.button-collapse i {
 .info-bottom ul li .fa{
 	display: none;
 }
-
+.info-bottom .phone {
+	margin-left: 5px;
+	
+}
 .informacoes h4{
 	font-size: .9rem;
 }

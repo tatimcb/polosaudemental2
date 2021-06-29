@@ -18,7 +18,7 @@ $corpo .= "Email: " . $email . "\r\n";
 $corpo .= "Mensagem: " . $message . "\r\n";
 
 // Email que receberá a mensagem (Não se esqueça de substituir)
-$email_to = 'tatimcb@gmail.com';
+$email_to = 'contato@pism.com.br';
 
 // Enviando email
 $status = mail($email_to, mb_encode_mimeheader($subject, "utf-8"), $corpo, $headers);

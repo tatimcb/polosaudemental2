@@ -255,7 +255,7 @@
 			</article>
 			<article class="col s12 m4 center">
 				<div class="card-image">
-					<img src="img/Sem Título-2.jpg" alt="Profissional 02">
+					<img src="img/profissional02.jpeg" alt="Profissional 02">
 				</div>
 				<div class="card-stacked">
 					<div class="card-content">
@@ -305,10 +305,10 @@
 
 			<div class="col s6 m6 l6">
 				<div class="informacoes white-text">
-					<h4> Redes sociais </h4>
+					<!-- <h4> Redes sociais </h4>
 					<p class="light"> Entre em contato conosco através das nossas redes sociais e faça parte desse projeto maravilhoso! </p>
 					<a href="#" class="btn-floating blue-logo"><i class="fa fa-facebook"></i></a>
-					<a href="#" class="btn-floating blue-logo"><i class="fa fa-instagram"></i></a>
+					<a href="#" class="btn-floating blue-logo"><i class="fa fa-instagram"></i></a> -->
 
 
 					<h4> E-mail </h4>
